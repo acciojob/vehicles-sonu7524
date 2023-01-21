@@ -8,7 +8,7 @@ public class Boat implements WaterVehicle{
         return name;
     }
 
-    public void setName(String name) {
+    public void setVehicleName(String name) {
         this.name = name;
     }
 
@@ -16,7 +16,12 @@ public class Boat implements WaterVehicle{
         return capacity;
     }
 
-    public void setCapacity(int capacity) {
+    public void setVehicleCapacity(int capacity) {
         this.capacity = capacity;
+    }
+
+    public Boat(String name, int capacity){
+        setVehicleCapacity(capacity);
+        setVehicleName(name);
     }
 }
